@@ -1056,10 +1056,12 @@ def Cryptestein():
 											if i==c:
 
 												char=True;
-								if str=='':
-									char=True;
-								
-								if char==True:
+							
+								if char==True or str=="":
+									clear();
+		
+									NAME();
+
 									print("\nYou do not enter the message in Uppercase letters or you entered number along with the Text or you entered the Text with Special Symbols\n");
 									Brute();
 									
@@ -1350,7 +1352,10 @@ def Cryptestein():
 											else:
 												index=[];
 												for i in str:
-													index.append(ord(i)-97);
+													if i==" ":
+														pass;
+													else:
+														index.append(ord(i)-97);
 													
 												key_list=[int(key)];
 												for i in index:
@@ -1555,7 +1560,10 @@ def Cryptestein():
 											else:
 												index=[];
 												for i in str:
-													index.append(ord(i)-65);
+													if i==" ":
+														pass;
+													else:
+														index.append(ord(i)-97);
 											
 												key_list=[int(key)];
 												for i in index:
@@ -1666,6 +1674,7 @@ def Cryptestein():
 								str=input("Enter the text you want to decrypt in capital alphabets only without special symbols : ");
 								if str=="Exit":
 									exit();
+									
 
 								char=False;			
 								
@@ -1687,7 +1696,7 @@ def Cryptestein():
 												char=True;
 
 
-								if char==True:
+								if char==True or str=="":
 									clear();
 		
 									NAME();
@@ -1704,7 +1713,10 @@ def Cryptestein():
 
 									index=[];
 									for i in str:
-										index.append(ord(i)-65);
+										if i==" ":
+											pass;
+										else:
+											index.append(ord(i)-97);
 											
 									decrypt_val=[];
 									start=0;
