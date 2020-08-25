@@ -1563,7 +1563,7 @@ def Cryptestein():
 													if i==" ":
 														pass;
 													else:
-														index.append(ord(i)-97);
+														index.append(ord(i)-65);
 											
 												key_list=[int(key)];
 												for i in index:
@@ -1573,7 +1573,7 @@ def Cryptestein():
 														key_list.append(key);
 													else:
 														key_list.append(key);
-
+											
 												decrypt_val=[];
 												start=0;
 												for den_val in index:
@@ -1716,7 +1716,7 @@ def Cryptestein():
 										if i==" ":
 											pass;
 										else:
-											index.append(ord(i)-97);
+											index.append(ord(i)-65);
 											
 									decrypt_val=[];
 									start=0;
