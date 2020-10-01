@@ -1,1 +1,2 @@
-# Cryptestein: An awesome tool to encrypt and decrypt text.
+# Cryptestein
+An awesome tool to encrypt and decrypt text.
